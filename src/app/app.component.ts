@@ -26,7 +26,7 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     AWS.config.region = 'us-east-1'; // Region
     AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-      IdentityPoolId: 'us-east-1:9439fb82-d0c1-4023-b9c9-beae786f301a'//your Identity poolId
+      IdentityPoolId: ''//your Identity poolId
     });
     this.lexRuntime = new AWS.LexRuntime();
   }

@@ -1,0 +1,6 @@
+<p *ngFor= 'let m of chatMessages' class="{{m.Owner}}">{{m.Owner}}: {{m.Message}}</p>
+
+<form #chatform="ngForm" class="chatForm" style="margin-top: 10px" (ngSubmit)="pushChat(chatform.value)">
+  <input type="text" id="chatInput" size="32" value="" placeholder='Type a message...'
+         autocomplete="off" [(ngModel)]=ChatInput  name="chatInput" >
+</form>

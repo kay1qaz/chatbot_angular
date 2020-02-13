@@ -38,7 +38,7 @@ export class AppComponent implements OnInit{
       this.ChatInput = '';
       const params = {
         botAlias: '$LATEST', //
-        botName: 'KayTest', // your chatbot name
+        botName: '', // your chatbot name
         userId: this.lexUserId,
         inputText: data1.chatInput,
         sessionAttributes: this.sessionAttributes
